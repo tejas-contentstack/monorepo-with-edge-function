@@ -29,7 +29,7 @@ This Turborepo has some additional tools already setup for you:
 ## Setup
 
 ```sh
-cd turborepo-npm-demo
+cd monorepo-with-edge-function
 npm install
 ```
 
