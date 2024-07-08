@@ -4,9 +4,9 @@ export default async function handler(request, env) {
   
     console.log("env")
     console.log(env)
-    console.log(env.BLOCK_WEB_CRAWLER_FOR_DOMAIN)
+    console.log(JSON.parse(env).BLOCK_WEB_CRAWLER_FOR_DOMAIN)
     // Add header for a specific hostname
-    if (hostname === env.BLOCK_WEB_CRAWLER_FOR_DOMAIN || hostname === 'example.domain.com') {
+    if (hostname === JSON.parse(env).BLOCK_WEB_CRAWLER_FOR_DOMAIN || hostname === 'example.domain.com') {
         const response = await fetch(request);
 
         const modifiedResponse =  new Response(response.body, response)
