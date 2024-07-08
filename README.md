@@ -63,4 +63,4 @@ npm run dev
 
 ### Edge Functions
 
-User can host an edge function by adding the `functions/[proxy].edge.js file at the root. To understand different use cases of edge function visit [Launch Edge Function](https://www.contentstack.com/docs/developers/launch/edge-functions)
+User can host an edge function by adding the `functions/[proxy].edge.js` file at the root. To understand different use cases of edge function visit [Launch Edge Function](https://www.contentstack.com/docs/developers/launch/edge-functions)
