@@ -47,6 +47,11 @@ To build only a specific app(Eg:- 'web'), run the following command:
 npm run build -- --filter web
 ```
 
+Build directory path for the above would be:
+```
+./apps/web/.next
+```
+
 ### Develop
 
 To develop all apps and packages, run the following command:
@@ -54,3 +59,8 @@ To develop all apps and packages, run the following command:
 ```
 npm run dev
 ```
+
+
+### Edge Functions
+
+User can host an edge function by adding the `functions/[proxy].edge.js file at the root. To understand different use cases of edge function visit [Launch Edge Function](https://www.contentstack.com/docs/developers/launch/edge-functions)
