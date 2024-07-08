@@ -1,9 +1,9 @@
-export default async function handler(request) {
+export default async function handler(request, env) {
     const url = new URL(request.url);
     const hostname = url.hostname;
   
     // Add header for a specific hostname
-    if (hostname === 'example.domain.com') {
+    if (hostname === env.BLOCK_WEB_CRAWLER_FOR_DOMAIN || hostname === 'example.domain.com') {
         const response = await fetch(request);
 
         const modifiedResponse =  new Response(response.body, response)
